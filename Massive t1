@@ -1,0 +1,38 @@
+#include <stdio.h>
+#define A 10
+
+void showArray(float array[])
+{
+	printf("Значение массива 1: %.2f\t", array[0]);
+	printf("Адрес: %p\n", &array[0]);
+	printf("Значение массива 2: %.2f\t", array[1]);
+	printf("Адрес: %p\n", &array[1]);
+	printf("Значение массива 3: %.2f\t", array[2]);
+	printf("Адрес: %p\n", &array[2]);
+	printf("Значение массива 4: %.2f\t", array[3]);
+	printf("Адрес: %p\n", &array[3]);
+	printf("Значение массива 5: %.2f\t", array[4]);
+	printf("Адрес: %p\n", &array[4]);
+	printf("Значение массива 6: %.2f\t", array[5]);
+	printf("Адрес: %p\n", &array[5]);
+	printf("Значение массива 7: %.2f\t", array[6]);
+	printf("Адрес: %p\n", &array[6]);
+	printf("Значение массива 8: %.2f\t", array[7]);
+	printf("Адрес: %p\n", &array[7]);
+	printf("Значение массива 9: %.2f\t", array[8]);
+	printf("Адрес: %p\n", &array[8]);
+	printf("Значение массива 10: %.2f\t", array[9]);
+	printf("Адрес: %p\n", &array[9]);
+	return;
+}
+
+int main(void)
+{
+	float base[A] = {100.0f, 200.0f, 300.0f, 400.0f, 500.0f, 600.0f, 700.0f, 800.0f, 900.0f, 1000.0f,};
+
+	printf("\n\tВ этой программе описаны значения массива и физические адреса в оперативной памяти.\n");
+
+	showArray(base);
+
+	return A;
+}
